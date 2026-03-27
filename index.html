@@ -13,6 +13,26 @@
   <script src="https://assets.adobedtm.com/launch-EN.js"></script>
 
 </head>
+  <script>
+  // Simula asignación A/B (50%)
+  var isVariantB = Math.random() < 0.5;
+
+  if (isVariantB) {
+    console.log('VARIANTE B');
+
+    var boton = document.getElementById('cta');
+
+    if (boton) {
+      boton.style.position = 'fixed';
+      boton.style.bottom = '20px';
+      boton.style.right = '20px';
+      boton.style.backgroundColor = 'red';
+    }
+
+  } else {
+    console.log('VARIANTE A');
+  }
+</script>
 <body>
 
   <h1>Bienvenido a mi página</h1>
